@@ -1,0 +1,111 @@
+/* 🔹 Configuração Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+}
+
+/* 🔹 Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* 🔹 Botões */
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+/* 🔹 Melhorias para Cartões */
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Botões com Efeito */
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Estilização da Tabela */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    text-align: center;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto; /* 🔥 Garante que a tabela não quebre */
+    }
+
+    .table th, .table td {
+        font-size: 12px; /* 🔥 Diminui a fonte para caber no ecrã menor */
+        padding: 6px; /* 🔥 Ajusta o espaçamento interno */
+        text-align: center; /* 🔥 Centraliza os textos */
+    }
+
+    .btn {
+        font-size: 12px; /* 🔥 Diminui tamanho dos botões */
+        padding: 5px 8px;
+    }
+
+    .btn-warning, .btn-danger {
+        display: block; /* 🔥 Deixa os botões um abaixo do outro */
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
